@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <main className="container mx-auto px-4">
       <div className="grid gap-8 grid-cols-1 mt-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-        {res.results.map((movie) => (
+        {res.results&&res.results.map((movie) => (
           <Movie
             key={movie.id}
             id={movie.id}
